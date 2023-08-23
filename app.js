@@ -35,10 +35,10 @@ function showNotes() {
   let html = "";
   notesObj.forEach(function (element, index) {
     html += `
-            <div class="noteCard my-2 mx-2 card cardeff" style="width: 18rem;">
-                    <div class="card-body cardeff" style="background: rgba(255,255,255,0.1);">
-                        <h5 class="card-title">${element.title}</h5>
-                        <p class="card-text"> ${element.text}</p>
+    <div class="noteCard my-2 mx-2 card cardeff" style="width: 18rem;">
+    <div class="card-body cardeff" style="">
+        <h5 class="card-title" style="font-family:serif ; color:white;text-transform:uppercase">${element.title}</h5>
+        <p class="card-text" style="font-family:serif ; color:white"> ${element.text}</p>
                         <button id="${index}"onclick="deleteNote(this.id)" class="btn btn-primary">Delete Note</button>
                     </div>
                 </div>`;
